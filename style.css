@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+ 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 2px solid #FA2FB5;
+    width: 500px;
+    background-color:#100720 ;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    
+}
+.display-screen{
+    border: 1px solid #FA2FB5;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: pink;
+    color: black;
+
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,70px);
+}
+.keys div{
+    border: 1px solid #FA2FB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.keys div:hover{
+    
+    background-color: #FA2FB5;
+}
+.zero{
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+
+/* operation keys */
+.operation{
+    color: #FFC23C;
+}
+.clear,
+.unary,
+.percentage{
+    color: green;
+}
